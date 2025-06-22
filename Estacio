@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+
+#include <windows.h>
+#include <tchar.h>
+
+int main () {
+
+    {
+        bool res;
+        res = CreateDirectory(L"Exemplo", NULL);
+        std::cout << "Criador: " << res  << std::endl;
+    }
+    return 0;
+}
